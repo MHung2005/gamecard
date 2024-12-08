@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="1200.0" spacing="15" style="-fx-padding: 20; -fx-alignment: center;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BlackjackControllerBasic">
+    
+    <!-- Tiêu đề -->
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Blackjack Game" />
+    
+    <!-- Thông tin bài của người chơi -->
+    <Label fx:id="playerHandLabel" style="-fx-font-size: 16px;" text="Player Hand: " />
+    
+    <!-- Thông tin bài của nhà cái -->
+    <Label fx:id="dealerHandLabel" style="-fx-font-size: 16px;" text="Dealer Hand: " />
+    
+    <!-- Trạng thái trò chơi -->
+    <Label fx:id="statusLabel" style="-fx-font-size: 18px; -fx-text-fill: red;" text="Game Status" />
+    
+    <!-- Nút điều khiển trò chơi -->
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="dealButton" onAction="#handleDeal" style="-fx-font-size: 14px;" text="Deal" />
+        <Button fx:id="hitButton" disable="true" onAction="#handleHit" style="-fx-font-size: 14px;" text="Hit" />
+        <Button fx:id="standButton" disable="true" onAction="#handleStand" style="-fx-font-size: 14px;" text="Stand" />
+    </HBox>
+    
+</VBox>

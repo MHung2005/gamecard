@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-image: url(file:/C:/Users/thanh/eclipse-workspace/blackjackdohoa/src/resources/images/backgroundofgame.png);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BlackjackControllerDoHoa">
+    <children>
+        <!-- Dealer's Hand -->
+        <HBox fx:id="dealerHand" layoutX="30" layoutY="50" spacing="10" />
+
+        <!-- Player's Hand -->
+        <HBox fx:id="playerHand" layoutX="30" layoutY="200" spacing="10" />
+
+        <!-- Deal Cards Button -->
+        <Button fx:id="dealButton" layoutX="200" layoutY="400" onAction="#dealCards" text="Deal Cards" />
+
+        <!-- Hit Button -->
+        <Button fx:id="hitButton" disable="true" layoutX="300" layoutY="400" onAction="#hit" text="Hit" />
+
+        <!-- Stand Button -->
+        <Button fx:id="standButton" disable="true" layoutX="400" layoutY="400" onAction="#stand" text="Stand" />
+
+        <!-- Game Status Label -->
+        <Label fx:id="gameStatus" layoutX="30" layoutY="350" text="Welcome to Blackjack!" textFill="#eee2e2" />
+    </children>
+</AnchorPane>
